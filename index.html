@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SAV Hospitals — Home</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="description" content="SAV Hospitals — compassionate care with a friendly, modern interface." />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="logo" href="#">
+        <svg class="logo-mark" viewBox="0 0 64 64" width="36" height="36" aria-hidden="true">
+          <rect rx="12" width="64" height="64" fill="#fff4f8"/>
+          <path d="M33 12h-2v9h-9v2h9v9h2v-9h9v-2h-9z" fill="#ff4d88"/>
+          <circle cx="46" cy="46" r="10" fill="#fff" opacity="0.4"/>
+        </svg>
+        <span class="brand">SAV Hospitals</span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link" href="#departments">Departments</a>
+        <a class="nav-link" href="#doctors">Doctors</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="actions">
+        <button id="bookBtn" class="btn btn-primary">Book Appointment</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">Compassionate care with a playful touch</h1>
+          <p class="hero-sub">
+            At SAV Hospitals we combine top medical expertise with patient-centered care in a warm and friendly environment.
+          </p>
+          <div class="hero-ctas">
+            <button id="bookBtn2" class="btn btn-primary">Book Appointment</button>
+            <a class="btn btn-ghost" href="#departments">Explore Departments</a>
+          </div>
+
+          <ul class="features">
+            <li><strong>24/7 Emergency</strong><span>Fast, expert care</span></li>
+            <li><strong>Trusted Experts</strong><span>Qualified specialists</span></li>
+            <li><strong>Modern Facilities</strong><span>Comfort & safety</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="card-patient">
+            <div class="avatar">S</div>
+            <div class="card-body">
+              <div class="card-title">Sana Patel</div>
+              <div class="card-sub">Pediatrics — Next visit: Jan 12</div>
+            </div>
+          </div>
+
+          <div class="floating-med">
+            <svg viewBox="0 0 48 48" width="120" height="120"><circle cx="24" cy="24" r="22" fill="#fff4f8"/><path d="M24 12v24M12 24h24" stroke="#ff4d88" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="departments" class="container cards-section">
+      <h2 class="section-title">Popular Departments</h2>
+      <p class="section-sub">Quick access to the departments our patients visit most.</p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-icon" style="background: linear-gradient(135deg,#ff9bb7,#ff6c90);">👶</div>
+          <h3>Pediatrics</h3>
+          <p>Specialized child care with gentle, experienced staff.</p>
+          <a class="card-link" href="#">See doctors →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" style="background: linear-gradient(135deg,#7be0ff,#6ab9ff);">❤️</div>
+          <h3>Cardiology</h3>
+          <p>Heart health with modern diagnostics and treatments.</p>
+          <a class="card-link" href="#">See doctors →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" style="background: linear-gradient(135deg,#ffd77a,#ffb86b);">🦴</div>
+          <h3>Orthopedics</h3>
+          <p>Mobility restoration and surgical expertise.</p>
+          <a class="card-link" href="#">See doctors →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="doctors" class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat">
+          <div class="stat-num">120+</div>
+          <div class="stat-label">Trusted Doctors</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Emergency Services</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">50k</div>
+          <div class="stat-label">Happy Patients</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact-section">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Visit Us</h3>
+          <p>SAV Hospitals, Main Street, City</p>
+          <p><strong>Phone:</strong> (555) 123-4567</p>
+          <p><strong>Email:</strong> hello@sav-hos.example</p>
+        </div>
+
+        <form id="contactForm" class="contact-form" onsubmit="return false;">
+          <h3>Send a Message</h3>
+          <label>
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            <input type="email" name="email" placeholder="Email" required>
+          </label>
+          <label>
+            <textarea name="message" placeholder="How can we help?" rows="4" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn btn-primary" id="sendMessageBtn">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> SAV Hospitals</div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content" role="document">
+      <button class="modal-close" id="closeModal" aria-label="Close">✕</button>
+      <h2 id="modalTitle">Book an Appointment</h2>
+      <form id="bookingForm" onsubmit="return false;">
+        <label>
+          <input type="text" name="patient" placeholder="Full name" required>
+        </label>
+        <label>
+          <input type="tel" name="phone" placeholder="Phone number" required>
+        </label>
+        <label>
+          <select name="department" required>
+            <option value="">Select department</option>
+            <option>General Medicine</option>
+            <option>Pediatrics</option>
+            <option>Cardiology</option>
+            <option>Orthopedics</option>
+          </select>
+        </label>
+        <div class="form-actions">
+          <button class="btn btn-primary" id="confirmBooking">Confirm</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
